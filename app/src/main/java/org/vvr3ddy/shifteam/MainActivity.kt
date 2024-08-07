@@ -97,7 +97,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-
 @Composable
 fun NavigationHost(
     modifier: Modifier = Modifier,

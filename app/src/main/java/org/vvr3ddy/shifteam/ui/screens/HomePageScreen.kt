@@ -17,12 +17,13 @@ class HomePageScreen private constructor(){
 
     @Composable
     fun ShowHomePage(modifier: Modifier = Modifier) {
+        val currentShiftScreen = CurrentShiftScreen.instance
         Column(
             modifier = modifier.then(Modifier.fillMaxSize()),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Text(text = "Home Page")
+            currentShiftScreen.ShowCurrentShift()
         }
     }
 }
